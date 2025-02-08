@@ -16,6 +16,8 @@
         }
 
         .container {
+            opacity: 0;
+            transition: opacity 3s ease-in-out;
             max-width: 90%;
             margin: auto;
             padding: 10px;
@@ -78,6 +80,20 @@
             p {
                 font-size: 0.9em;
             }
+        }
+
+        #matrixCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            opacity: 0;
+            transition: opacity 3s ease-in-out;
         }
     </style>
 </head>
@@ -151,23 +167,6 @@
             }, 5000);
         });
     </script>
-
-    <style>
-        #matrixCanvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        .container {
-            opacity: 0;
-            transition: opacity 3s ease-in-out;
-        }
-    </style>
-
 </body>
 
 </html>
